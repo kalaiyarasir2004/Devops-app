@@ -1,49 +1,14 @@
-"# DevOps Flask App" 
-"## ?? Overview" 
-"This project is a simple Flask web application, containerized using Docker and deployed on Kubernetes using Minikube." 
- 
-"## ?? Project Structure" 
-"```" 
-"ÃÄÄ app.py                 # Flask application" 
-"ÃÄÄ Dockerfile             # Docker container setup" 
-"ÃÄÄ deployment.yaml        # Kubernetes Deployment" 
-"ÃÄÄ service.yaml           # Kubernetes Service" 
-"ÀÄÄ README.md              # Project documentation" 
-"```" 
- 
-"## ??? Steps to Run Locally" 
-"1. **Clone the repository**" 
-"   ```sh" 
-"   git clone https://github.com/kalaiyarasir2004/Devops-app.git" 
-"   cd Devops-app" 
-"   ```" 
- 
-"2. **Run Flask App Locally**" 
-"   ```sh" 
-"   python app.py" 
-"   ```" 
- 
-"3. **Build and Run Docker Container**" 
-"   ```sh" 
-"   docker build -t flask-app ." 
-"   docker run -p 5000:5000 flask-app" 
-"   ```" 
- 
-"## ?? Deploy on Kubernetes (Minikube)" 
-"1. **Start Minikube**" 
-"   ```sh" 
-"   minikube start" 
-"   ```" 
-"2. **Deploy the App**" 
-"   ```sh" 
-"   kubectl apply -f deployment.yaml" 
-"   kubectl apply -f service.yaml" 
-"   ```" 
- 
-"3. **Get the Service URL**" 
-"   ```sh" 
-"   minikube service flask-app --url" 
-"   ```" 
- 
-"## ?? Screenshot" 
-"![Project Screenshot](project-screenshot.png)" 
+ DevOps Flask App
+A simple Flask app, containerized with Docker and deployed on Kubernetes using Minikube.
+
+Project Structure
+â”œâ”€â”€ app.py         # Flask app  
+â”œâ”€â”€ Dockerfile     # Docker setup  
+â”œâ”€â”€ deployment.yaml # Kubernetes Deployment  
+â”œâ”€â”€ service.yaml   # Kubernetes Service  
+â””â”€â”€ README.md      #Documentation
+How to Run:
+  1ï¸âƒ£ Clone the Repository
+  2ï¸âƒ£ Run Flask Locally
+  3ï¸âƒ£ Build & Run Docker Container
+  4ï¸âƒ£ Deploy on Minikube
